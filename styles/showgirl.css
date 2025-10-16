@@ -3,7 +3,7 @@ html,body{
   height:100%
 }
 body {
-  background: #112 url(//images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg)  center no-repeat;
+  background: transparent url(//images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg)  center no-repeat;
   background-size:cover;
   margin:0
 }
@@ -23,7 +23,7 @@ body {
 .logo b{
   font: 400 19vh "Vibur";
   color: #fee;
-  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px yellow;
 }
 .logo b span{
   animation: blink linear infinite 2s;

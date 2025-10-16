@@ -11,7 +11,7 @@ import "@/styles/neon.css"
 import "@/styles/glowing.css"
 import "@/styles/spotlight.css"
 import '@/styles/gradient.css';
-
+import '@/styles/curvedloop.css';
 
 const beVietnamPro = Be_Vietnam_Pro({
   subsets: ["vietnamese", "latin"],

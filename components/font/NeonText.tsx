@@ -31,7 +31,7 @@ export default function NeonText({ text, style }: NeonTextProps) {
     <h1
       ref={ref}
       style={style}
-      className="cursor-pointer leading-none"
+      className="cursor-pointer leading-none text-center"
       onClick={neonGlory}
     >
       {text}

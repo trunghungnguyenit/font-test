@@ -10,7 +10,6 @@ export default function Home() {
         <RichTextToolbar />
       </section>
 
-      {/* Font preview */}
       <section className="flex-1 flex items-center justify-center bg-zinc-950">
         <FontPreview />
       </section>

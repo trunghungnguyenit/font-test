@@ -12,8 +12,9 @@ interface GradientTextProps {
 export default function GradientText({
   text,
   style,
-  colors = ["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"],
-  animationSpeed = 8,
+  //colors = ["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"],
+  colors = ["#40FFAA", "#4079FF", "#FFE740", "#FF40C0", "#FF7A00"],
+  animationSpeed = 2,
   showBorder = false,
 }: GradientTextProps) {
   const gradientStyle = {

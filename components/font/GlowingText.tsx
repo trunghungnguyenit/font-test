@@ -10,14 +10,14 @@ export default function GlowingText({ text, style }: GlowingTextProps) {
   const chars = text.split("");
 
   return (
-    <div className="glow-container" style={style}>
+    <div className="glow-container text-center" style={style}>
       {chars.map((char, i) => (
         <span
           key={i}
           className="glow-char"
           style={{
             animationDelay: `${(i / chars.length) * -2}s`,
-            ...(style || {}),
+            fontSize: style?.fontSize,
           }}
         >
           {char}

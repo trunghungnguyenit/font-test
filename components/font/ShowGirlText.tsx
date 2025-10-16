@@ -13,7 +13,7 @@ export default function ShowGirlText({ text, style }: ShowGirlTextProps) {
     if (!ref.current) return;
     const letters = text
   .split("")
-  .map((ch) => `<span style="font-size:${style?.fontSize};font-weight:${style?.fontWeight};font-style:${style?.fontStyle};text-decoration:${style?.textDecoration};">${ch}</span>`)
+  .map((ch) => `<span style="font-size:${style?.fontSize}">${ch}</span>`)
   .join("");
     ref.current.innerHTML = `<b>${letters}</b>`;
   }, [text]);

@@ -8,7 +8,7 @@ interface SpotlightTextProps {
 
 export default function SpotlightText({ text, style }: SpotlightTextProps) {
   return (
-    <div className="neon" style={style}>
+    <div className="neon text-center" style={{ fontSize: style?.fontSize }}>
       <span className="text" data-text={text}>
         {text}
       </span>

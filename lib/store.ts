@@ -3,7 +3,7 @@ import { create } from "zustand";
 export interface FontTemplate {
   id: string;
   name: string;
-  component: string; // tên component tương ứng
+  component: string;
 }
 
 interface FontState {
@@ -14,11 +14,12 @@ interface FontState {
 
 export const useFontStore = create<FontState>((set) => ({
   templates: [
-    { id: "neon-1", name: "Neon Light", component: "NeonText" },
-    { id: "showgirl-1", name: "ShowGirl Blink", component: "ShowGirlText" },
+    { id: "neon-1", name: "Neon", component: "NeonText" },
+    { id: "showgirl-1", name: "ShowGirl", component: "ShowGirlText" },
     { id: "glow-1", name: "Glowing", component: "GlowingText" },
     { id: "spotlight-1", name: "Spotlight", component: "SpotlightText" },
     { id: "gradient-1", name: "Gradient", component: "GradientText" },
+    { id: "curvedloop-1", name: "CurvedLoop", component: "CurvedLoopText" },
   ],
   selectedTemplate: null,
   setSelectedTemplate: (template) => set({ selectedTemplate: template }),

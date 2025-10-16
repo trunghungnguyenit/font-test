@@ -7,16 +7,13 @@ import ShowGirlText from "./font/ShowGirlText";
 import GradientText from "./font/GradientText";
 import GlowingText from "./font/GlowingText";
 import SpotlightText from "./font/SpotlightText";
+import CurvedLoopText from "./font/CurvedLoopText";
 
 export function FontPreview() {
   const { selectedTemplate } = useFontStore();
   const [settings, setSettings] = useState({
     text: "HELLO FONT",
     fontSize: 80,
-    isBold: false,
-    isItalic: false,
-    isUnderline: false,
-    align: "center",
   });
 
   useEffect(() => {
@@ -36,10 +33,7 @@ export function FontPreview() {
 
   const textStyle: React.CSSProperties = {
     fontSize: `${settings.fontSize}px`,
-    fontWeight: settings.isBold ? "700" : "400",
-    fontStyle: settings.isItalic ? "italic" : "normal",
-    textDecoration: settings.isUnderline ? "underline" : "none",
-    textAlign: settings.align as "left" | "center" | "right",
+    textAlign: "center",
   };
 
   switch (selectedTemplate.component) {
@@ -53,6 +47,8 @@ export function FontPreview() {
       return <SpotlightText text={settings.text} style={textStyle} />;
     case "GradientText":
       return <GradientText text={settings.text} style={textStyle} />;
+    case "CurvedLoopText":
+      return <CurvedLoopText text={settings.text} style={textStyle} />;
     default:
       return (
         <div style={textStyle} className="text-white">
